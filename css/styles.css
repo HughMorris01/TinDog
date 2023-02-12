@@ -8,7 +8,7 @@ body {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 h1 {
@@ -22,6 +22,13 @@ h2 {
     font-family: "Montserrat-Black";
     font-weight: 900;
     font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: "Montserrat-Black";
+    font-weight: 900;
+    font-size: 3.5rem;
     line-height: 1.5;
 }
 
@@ -49,6 +56,10 @@ p {
     font-family: "Montserrat-Light";
 }
 
+.testing {
+    margin-right: 12%;
+}
+
 /* Download Buttons */
 .download-button {
     margin: 5% 3% 5% 0;
@@ -57,15 +68,19 @@ p {
 /* Title Image */
 
 .title-image {
-    width: 60%;
-    transform: rotate(25deg); 
+    position: absolute;
+    width: 18%;
+    transform: rotate(18deg); 
+    right: 30%
 }
 
 
 /* Features Section */
 
 #features {
+    position: relative;
     padding: 7% 15%;
+    background-color: #fff;
 }
 
 .feature-box {
@@ -90,8 +105,84 @@ p {
 /* Testimonials  */
 
 #testimonials {
-    padding: 7% 15%;
     text-align: center;
     background-color: #ef8172;
     color: #fff;
 }
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* Pricing Sections */
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-col {
+    padding: 3% 2%;
+}
+
+/* Call to Action */
+#cta {
+    padding: 3% 15%;
+    background-color: #ff4c68;
+    color:#fff;
+    text-align: center;
+}
+
+/* Footer */
+
+#footer {
+    text-align: center;
+    background-color: #fff;
+    padding: 3% 15%;
+}
+
+.social-icons {
+    display: inline-block;
+    padding:5px 10px;
+    margin: 10px 5px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1033px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        width: 50%;
+    }
+}
+
+@media (max-width: 993px) {
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+        width: 50%;
+    }
+}
+
